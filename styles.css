@@ -62,7 +62,6 @@ img {
 :root {
   --color-dark: #161616;
   --color-red: #ff4929;
-  /* --color-green: #4cdb95; */
   --color-green: #01ab47;
 }
 
@@ -169,7 +168,7 @@ li {
 .diplodocus {
   position: absolute;
   top: -10px;
-  left: calc(4vw + 200px);
+  right: calc(50% + 4vw);
   width: 130px;
   animation: animate-diplodocus 0.3s cubic-bezier(0, 1.9, 1, 1) both;
   animation-delay: 0.6s;
