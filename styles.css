@@ -170,8 +170,9 @@ li {
   position: absolute;
   top: -10px;
   left: calc(4vw + 200px);
-  transform: rotate(180deg) scaleX(-1);
   width: 130px;
+  animation: animate-diplodocus 0.5s cubic-bezier(0, 1.4, 1, 1) both;
+  animation-delay: 0.4s;
 }
 
 @media (max-width: 900px) {
@@ -236,6 +237,15 @@ li {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes animate-diplodocus {
+  0% {
+    transform: rotate(180deg) scaleX(-1) translateY(100%);
+  }
+  100% {
+    transform: rotate(180deg) scaleX(-1) translateY(0);
   }
 }
 
